@@ -1,0 +1,12 @@
+@model List<Veterinaria.Models.Producto>
+
+<h2>Productos para Mascotas</h2>
+<table>
+    <tr><th>Id</th><th>Nombre</th><th>Categoría</th><th>Precio</th><th>Stock</th></tr>
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Id</td><td>@p.Nombre</td><td>@p.Categoria</td><td>@p.Precio</td><td>@p.Stock</td>
+        </tr>
+    }
+</table>
